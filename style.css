@@ -1,0 +1,154 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 175vh;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+
+    /*position: relative;
+    top: 0;
+    left: 0;*/
+}
+
+.child{
+    padding:25px;
+    border: 3px solid black;
+}
+
+/* ? Static
+*default
+*positioned in relation to element
+* top, bottom, left, right and z-indexproperties have NO effect
+*/
+
+.static{
+    border: 2px solid red;
+    background-color: red;
+
+   /* position: static; */
+}
+
+.relative{
+    border: 2px solid rebeccapurple;
+    background-color: rebeccapurple;
+
+    /* position: relative; */
+}
+
+/* ? Absolute
+* removes the element from the flow
+* postions it relative to the parent container
+* position defined using top, bottom, left, right and z-index properties
+
+! IMPORTANT DISTINCTION
+* positions to the closent relative container
+*if parent is static, it will move outside of the parent container
+* if parent is relative, it will move to the edge of the parent container
+*/
+
+.absolute{
+    border: 2px solid green;
+    background-color: green;
+    
+    /*position: absolute;*/
+    
+}
+
+/* ? Fixed
+* like abosolute
+* positioned to viewport
+* doesnt move when scrolling
+* position defined using top, bottom, left, right and z-index properties
+*/
+
+.fixed{
+    border: 2px solid blue;
+    background-color: blue;
+
+   /* position: fixed; */
+    
+}
+
+/* ? Sticky
+* mix of relative and fixed
+*relative to the flow
+* position defined using top, bottom, left, right and z-index properties BUT
+* when you start scrolling
+*stays fixed when scrolling; relative when staitionary
+*/
+
+.sticky{
+    border: 2px solid orange;
+    background-color: orange;
+
+    /* position: sticky; */
+    top: 25px;
+    left: 25px;
+}
+
+/* 
+? Display Proerty
+* Defines when an element is block, inline, or inline-block
+* blocks are created top to bottom
+* inline are positioned side by side
+
+? Inherent Block Elements
+* nav, header, div, p, ect
+
+? Inherent Inline Elements
+* a, button, span, strong, b , em, img
+*/
+
+.block-container{
+    border: 1px solid black;
+    margin: 25px 0;
+}
+
+
+.inline-element{
+    border: 1px solid salmon
+
+    /* inline can be turned into block */
+    display block;
+
+    /* ? note: act as block but done occupy full width */
+}
+
+.inline-block{
+    /* its a div for now which is a block element */
+    border: 1px solid rebeccapurple;
+    display: inline-block;
+
+    /* inline cannot set width. It's set to original content width */
+    width: 250px;
+
+    /* inline block allows us to set block element int inline and change it width*/
+}
+
+/*
+    ? float
+    * float element from left to right 
+*/
+
+.float-container{
+    width: 150%;
+    height: 25vw;
+    border: 1px solid blue;
+}
+
+.float-box{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+
+    float: right;
+}
