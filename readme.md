@@ -2,7 +2,7 @@
 
 ## Git Commands
 
-git config --global --list shows your git configuration. we're looking for email and name.
+'git config --global --list' shows your git configuration. We're looking for email and name.
 
 git config --global user.email "youremailgoeshere" to set your email
 
