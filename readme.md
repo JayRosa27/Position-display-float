@@ -12,7 +12,7 @@ git init initializes empty repository
 
 git status shows the status of the repository
 
-git add . adds all files in the folder to be tracked (you can also defined specific files)
+'git add .' adds all files in the folder to be tracked (you can also defined specific files)
 
 git commit -m "your commit msg here" creates a commit
 
